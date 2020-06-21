@@ -30,8 +30,8 @@ grid_input_test = expand.grid(
 )
 
 #levels correction ----
-levels(grid_input_test$Qualité) = model_rf$forest$xlevels$Qualité
-levels(grid_input_test$Poste) = model_rf$forest$xlevels$Poste
+levels(grid_input_test$Qualité) = model_rf_fines$forest$xlevels$Qualité
+levels(grid_input_test$Poste) = model_rf_fines$forest$xlevels$Poste
 
 for(i in 1:nrow(grid_input_test)){
   #fines
